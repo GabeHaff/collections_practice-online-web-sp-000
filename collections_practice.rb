@@ -32,4 +32,30 @@ end
     dollars << word
   end
 end
- 
+ def find_a(array)
+  found = []
+  array.select do |word|
+    if word.start_with?("a")
+      found << word
+    end
+  end
+end
+
+def sum_array(array)
+  total = 0
+  array.each do |number|
+  total = total + number
+  end
+total
+end
+
+def add_s(array)
+  s_array = []
+  array.each_with_index do |word, index|
+    if index != 1
+      added << word + "s"
+    end
+    s_array[1] = array[1]
+  end
+s_array
+end
