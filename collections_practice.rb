@@ -33,10 +33,10 @@ end
   end
 end
  def find_a(array)
-  found = []
+  a_words = []
   array.select do |word|
     if word.start_with?("a")
-      found << word
+      a_words << word
     end
   end
 end
